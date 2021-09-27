@@ -1,0 +1,219 @@
+.title{
+  padding:40px
+}
+.Container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  
+}
+img{
+  filter: brightness(50%);
+}
+.child{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding:40px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.collegeDetails{
+  padding: 10px 20px 0 20px;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: space-between
+}
+.collegeDetailsRight{
+  margin-left: auto; 
+  margin-right: 0;
+  text-align: right;
+}
+.offertext{
+  background-color:#A9E4D7;
+  border-radius:0px 50px 50px 0px;
+  padding: 5px 3px 5px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  width:63%
+}
+
+.originalFees{
+  text-decoration: line-through;
+  color:gray;
+  font-size: 14px;
+  font-weight: bold;
+  margin:0;
+  padding:0;
+}
+.discountedFees{
+  color:red;
+  font-weight: bold;
+  font-size: 30px;
+  margin:0;
+  padding:0;
+}
+.feesCycle{
+  color:gray;
+  font-size:13px;
+  font-weight: normal;
+  margin:0;
+  padding:0;
+}
+.bottomCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+.amenities{
+  font-size: 15px;
+  color:#00A19D;
+  margin-right: 20px;
+}
+.nearestPlace{
+  margin:0;
+  padding:0;
+}
+.price-container{
+  display: flex;
+  text-align: left;
+  margin-left: 30px;
+}
+.card-price {
+	display: inline-block;
+  width: auto;
+	height: 38px;
+	background-color: red;
+	-webkit-border-radius: 3px 4px 4px 3px;
+	-moz-border-radius: 3px 4px 4px 3px;
+	border-radius: 3px 4px 4px 3px;
+	border-left: 1px solid red;
+	/* This makes room for the triangle */
+	margin-left: 45px;
+	position: relative;
+	color: white;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 38px;
+	padding: 0 5px 0 5px;
+}
+
+/* Makes the triangle */
+.card-price:before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -19px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 19px solid transparent;
+	border-right: 19px solid red;
+}
+
+/* Makes the circle */
+.card-price:after {
+	content: "";
+	background-color: white;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	display: block;
+	position: absolute;
+	left: -9px;
+	top: 17px;
+}
+
+.imageText{
+  position: absolute;
+  top:38%
+}
+.tag1{
+  color:gray;
+  background-color: white;
+  border-radius: 10px;
+  padding:1px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  padding:5px 8px 5px 8px;
+  margin-left: 5px;
+}
+.tag2{
+  color:gray;
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 12px;
+  padding:5px 8px 5px 8px;
+  font-weight: bold;
+  margin-left: 5px;
+  
+}
+.ranking{
+  color:white;
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 90px;
+}
+.ratingText{
+  position: absolute;
+  top:6%;
+  right:1%;
+  background-color: #F0A500;
+  color:white;
+  padding: 2px 5px 2px 5px;
+  border-radius:7px;
+  width:80px;
+  font-size: 13px;
+  text-align: center;
+}
+.ratingOut{
+  font-size: 30px;
+}
+.promotedContainer{
+  position: absolute;
+  top:-30px;
+  right:0
+}
+.promoted{
+  display: inline-block;
+  width: auto;
+	height: 38px;
+	background-color: #3DB2FF;
+	border-radius: 3px 4px 4px 3px;
+	margin-left: 19px;
+	position: relative;
+	color: white;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 38px;
+	padding: 0 10px 0 35px;
+}
+
+.promoted::before{
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-color: #3DB2FF transparent transparent;
+  position: absolute;
+  top: 0px;
+  left: -14px;
+  border-width: 18px 15px 19px 15px;
+}
+.promoted::after{
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-style: solid;
+  border-color: transparent transparent transparent #3DB2FF ;
+  bottom: 0.5px;
+  left:-29px;
+  border-width: 0px 15px 15px 15px;
+  transform: rotate(180deg);
+}
